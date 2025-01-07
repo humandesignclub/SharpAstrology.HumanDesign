@@ -417,13 +417,6 @@ public sealed class HumanDesignChart : IHumanDesignChart
                 Tone = dSunActivation.Tone,
                 Base = dSunActivation.Base
             },
-            Perspective = new()
-            {
-                Orientation = pSunActivation.Tone.ToOrientation(),
-                Color = pSunActivation.Color, 
-                Tone = pSunActivation.Tone,
-                Base = pSunActivation.Base
-            },
             Environment = new ()
             {
                 Orientation = dNodeActivation.Tone.ToOrientation(),
@@ -432,6 +425,13 @@ public sealed class HumanDesignChart : IHumanDesignChart
                 Base = dNodeActivation.Base
             },
             Awareness = new ()
+            {
+                Orientation = pSunActivation.Tone.ToOrientation(),
+                Color = pSunActivation.Color, 
+                Tone = pSunActivation.Tone,
+                Base = pSunActivation.Base
+            },
+            Perspective = new()
             {
                 Orientation = pNodeActivation.Tone.ToOrientation(),
                 Color = pNodeActivation.Color, 
